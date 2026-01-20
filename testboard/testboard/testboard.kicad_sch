@@ -373,26 +373,24 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Device:R_Potentiometer"
 			(pin_names
-				(offset 0)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -400,7 +398,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -417,7 +415,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Potentiometer"
 				(at 0 0 0)
 				(effects
 					(font
@@ -426,7 +424,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "resistor variable"
 				(at 0 0 0)
 				(effects
 					(font
@@ -435,7 +433,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "Potentiometer*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -444,10 +442,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "R_Potentiometer_0_1"
 				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -456,12 +454,36 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "R_1_1"
+			(symbol "R_Potentiometer_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -479,7 +501,25 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5262,7 +5302,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "Device:R_Potentiometer")
 		(at 168.91 125.73 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5289,8 +5329,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2_TabPin1"
-			(at 170.688 125.73 90)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
+			(at 168.91 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5307,7 +5347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Potentiometer"
 			(at 168.91 125.73 0)
 			(effects
 				(font
@@ -5330,6 +5370,9 @@
 		)
 		(pin "2"
 			(uuid "e316204d-a9d7-4cbb-aee6-f47a44db5876")
+		)
+		(pin "3"
+			(uuid "650a16f0-5af2-4f6d-b91b-fdfb8c8d8109")
 		)
 		(instances
 			(project "testboard"
