@@ -7,7 +7,6 @@
 *.sty
 *.bak
 *-bak
-*gerber*
 _autosave-*
 panel
 *.vcd
@@ -15,7 +14,6 @@ obj_dir
 fp-info-cache
 *-rescue.dcm
 *-rescue.lib
-*bom*.txt
 *.kicad_prl
 
 *.bit
@@ -25,9 +23,6 @@ obj_dir
 *.vcd
 
 *.lck
-
-*.zip
-!hardware/*/production/*.zip
 
 private
 
