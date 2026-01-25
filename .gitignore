@@ -1,4 +1,6 @@
 .DS_Store
+backups
+*backups*
 00Contents
 !documentation/fire-v.bit
 *.dtx
